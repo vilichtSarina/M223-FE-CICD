@@ -65,7 +65,7 @@ iframe {
   position: absolute;
   left: 20%;
   z-index: -3;
-  scale: 1.5;
+  scale: 1;
 }
 
 .loginButton {
