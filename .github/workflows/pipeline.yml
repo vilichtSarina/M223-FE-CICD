@@ -30,15 +30,4 @@ jobs:
       - name: Build docker image
         run: docker build . --tag vilichtsarina/m223:sarinafrontend && docker push vilichtsarina/m223:sarinafrontend
 
-  remote-start:
-    runs-on: ubuntu-latest
-    needs: push-image
-    steps:
-      - name: executing remote ssh commands using password
-        uses: appleboy/ssh-action@master
-        with:
-          host: ${{secrets.HOST}}
-          username: ${{secrets.USERNAME}}
-          password: ${{secrets.PASSWORD}}
-          port: 22
-          script: sh restart.sh
+
