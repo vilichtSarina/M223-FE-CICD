@@ -1,10 +1,10 @@
 import { Box } from "@mui/system";
 import logo from "../../logo1.png";
 import "./HomePage.css";
-import {useNavigate} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export default function HomePage() {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
   return (
     <Box className={"box"}>
@@ -15,15 +15,17 @@ export default function HomePage() {
         <hr />
       </div>
 
-      <button className={"loginButton"} onClick={() => navigate("/login") }>LOGIN</button>
+      <button className={"loginButton"} onClick={() => navigate("/login")}>LOGIN</button>
+      <center>
         <iframe
-            src="https://my.spline.design/clonercubesimplecopy-4e798f67900aa80d96268be736aaddc2/"
-            frameBorder="0"
-            width="100%"
-            height="100%"
-            title="logo"
+          src="https://i.redd.it/g61r1687wkd91.gif"
+          frameBorder="0"
+          width="100%"
+          height="100%"
+          title="logo"
         ></iframe>
-        <img src={logo} className="App-logo img" alt="logo" />
+      </center>
+      <img src={logo} className="App-logo img" alt="logo" />
     </Box>
   );
 }

@@ -1,109 +1,105 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;0,800;0,900;1,600;1,800&display=swap');
-.box{
-    height: 100vh;
-    width: 100vw;
-    display: grid;
-    place-items: center;
-    color: white;
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;0,800;0,900;1,600;1,800&display=swap");
+.box {
+  display: grid;
+  padding-left: 50vw;
+  place-items: center;
+  color: white;
 }
 
-h1{
-    position: absolute;
-    font-family: 'Raleway', sans-serif;
-    font-size: 1000%;
-    line-height:100px;
-    margin:0;
-    -webkit-text-fill-color: white;
-    -webkit-text-stroke: 1px white;
+h1 {
+  position: absolute;
+  font-family: "Raleway", sans-serif;
+  font-size: 1000%;
+  line-height: 100px;
+  margin: 0;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke: 1px white;
 }
 
-.our{
-    left: 10%;
-    top: 30%;
+.our {
+  left: 10%;
+  top: 30%;
 }
 
-.space{
-    left: 10%;
-    top: 50%;
+.space {
+  left: 10%;
+  top: 50%;
 }
 
-.textSign{
-    height: 100vh;
-    width: 100vw;
-    position: absolute;
-    background: transparent;
-    top: 0;
-    left: 0;
+.textSign {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  background: transparent;
+  top: 0;
+  left: 0;
 }
 
 .textSign p {
-    letter-spacing: 15px;
-    padding-left: 20px;
+  letter-spacing: 15px;
+  padding-left: 20px;
 }
 
-.textSign hr{
-    width: 35%;
-    color: white;
-    border: 1px solid white;
-    position: absolute;
-    top: 3%;
-    right: 35%;
+.textSign hr {
+  width: 35%;
+  color: white;
+  border: 1px solid white;
+  position: absolute;
+  top: 3%;
+  right: 35%;
 }
 
-.img{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    margin: 0;
-    padding: 0;
-    transform: translate(-50%, -50%);
-    width: 3vw;
-    height: 3vw;
+.img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  transform: translate(-50%, -50%);
+  width: 3vw;
+  height: 3vw;
 }
 
-iframe{
-    position: absolute;
-    left: 20%;
-    z-index: -3;
-    scale: 1.5;
+iframe {
+  position: absolute;
+  left: 20%;
+  z-index: -3;
 }
 
-
-
-.loginButton{
-    position: absolute;
-    top: 2%;
-    right: 2%;
-    height: 6%;
-    width: 10%;
-    border: 2px solid white;
-    background: transparent;
-    padding: 10px 20px;
-    outline: none;
-    cursor: pointer;
-    color: white;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    overflow: hidden;
+.loginButton {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  height: 6%;
+  width: 10%;
+  border: 2px solid white;
+  background: transparent;
+  padding: 10px 20px;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  overflow: hidden;
 }
 
-.loginButton:hover{
-    color: #4b4b59;
-    transition: color 0.5s ease-in-out;
+.loginButton:hover {
+  color: #4b4b59;
+  transition: color 0.5s ease-in-out;
 }
 
 .loginButton::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    transition: transform 0.5s ease-in-out;
-    z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  transition: transform 0.5s ease-in-out;
+  z-index: -1;
 }
 
 .loginButton:hover::before {
-    transform: translateX(100%);
+  transform: translateX(100%);
 }
