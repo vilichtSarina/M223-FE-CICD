@@ -8,8 +8,8 @@ export default function HomePage() {
 
   return (
     <Box className={"box"}>
-      <h1 className={"our"}>OUR</h1>
-      <h1 className={"space"}>SPACE</h1>
+      <h1 className={"our"}>CAT EAT</h1>
+      <h1 className={"space"}>SOLID MILK</h1>
       <div className="textSign">
         <p>PROJECT FOR UK223 </p>
         <hr />
