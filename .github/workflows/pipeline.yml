@@ -29,3 +29,15 @@ jobs:
       - uses: actions/checkout@v2
       - name: Build docker image
         run: docker build . --tag vilichtsarina/m223:sarinafrontend && docker push vilichtsarina/m223:sarinafrontend
+
+  remote-start:
+    runs-on: ubuntu-latest
+    steps:
+      - name: executing remote ssh commands using password
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{secrets.HOST}}
+          username: ${{secrets.USERNAME}}
+          password: ${{secrets.PASSWORD}}
+          port: 22
+          script: sh restart.sh
