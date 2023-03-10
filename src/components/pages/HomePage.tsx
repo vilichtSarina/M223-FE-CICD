@@ -16,7 +16,7 @@ export default function HomePage() {
 
       <button className={"loginButton"} onClick={() => navigate("/login")}>LOGIN</button>
       <iframe
-        src="https://automatique17257811.files.wordpress.com/2021/04/pingu-1.gif"
+        src="https://media.tenor.com/km-2whGtTUIAAAAC/noot-noot.gif"
         frameBorder="0"
         width="100%"
         height="100%"
