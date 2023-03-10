@@ -21,14 +21,14 @@ export default function LandingPage() {
   const [pageCount, setPageCount] = useState(1);
 
   const getPaginationPosts = () => {
-    postService.getPaginationPosts(page, 2).then((response) => {
+    postService.getPaginationPosts(page, 5).then((response) => {
       setPosts(response.data);
     });
   };
 
   const getPaginationCount = () => {
     postService.getAllPosts().then((response) => {
-      setPageCount(Math.round(response.data.length / 2));
+      setPageCount(Math.round(response.data.length / 5));
     });
   };
 
