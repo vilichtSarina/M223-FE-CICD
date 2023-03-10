@@ -8,9 +8,9 @@ export default function HomePage() {
 
   return (
     <Box className={"box"}>
-      <h1 className={"space"}>ARSON</h1>
+      <h1 className={"space"}>NOOT</h1>
       <div className="textSign">
-        <p>and other crimes we support </p>
+        <p>Ich muess ufs WC</p>
         <hr />
       </div>
 
